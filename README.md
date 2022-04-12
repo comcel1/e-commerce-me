@@ -1,11 +1,19 @@
 # e-commerce-me
 
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+## Description
 
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
+This challenge is to create a simple back end for an e-commerce website that has the ability to add, update and delete products, categories, and tags as needed.
 
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
+[Walkthrough Video](https://drive.google.com/file/d/1toSehGGms7fA2h0MrqR0tafDbEPT0pfP/view)
+
+## Installation
+
+To install this project, you will need to run the schema.sql file in the myscql shell and then seed the table.
+
+## Questions
+
+Please feel free to conatct me directly if you have any questions. Thanks for checking out my project!
+
+[GitHub](https://github.com/comcel1)
+
+<paulnelson@comcast.net>

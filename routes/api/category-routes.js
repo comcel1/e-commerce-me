@@ -11,9 +11,21 @@ router.get('/', (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', ({ params }, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
+  Category.findOne({
+    where: { id: params.id },
+    include: { model: Product },
+  })
+    .then((data) => {
+      if (!data) {
+        res.status(404).json({ message: 'Category not found' });
+        return;
+      }
+      res.json(data);
+    })
+    .catch((err) => res.status(500).json(err));
 });
 
 router.post('/', (req, res) => {
